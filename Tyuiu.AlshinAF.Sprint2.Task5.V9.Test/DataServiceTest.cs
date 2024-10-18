@@ -8,7 +8,10 @@ namespace Tyuiu.AlshinAF.Sprint2.Task5.V9.Test
         public void TestMethod1()
         {
             DataService ds = new DataService();
-            Assert.AreEqual("январь", ds.FindDateOfNextDay(1));
+            int n = 9;
+            int m = 4;
+            string wait = "јпрель 10";
+            Assert.AreEqual(wait, ds.FindDateOfNextDay(m, n));
         }
     }
 }
