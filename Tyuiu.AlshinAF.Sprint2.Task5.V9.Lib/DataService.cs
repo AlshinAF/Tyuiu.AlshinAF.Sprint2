@@ -118,7 +118,6 @@ namespace Tyuiu.AlshinAF.Sprint2.Task5.V9.Lib
                     break;
                 default:
                     throw new ArgumentException($"День должен быть от 1 до 31. Значение {n}");
-                    break;
             }
             switch (m)
             {
