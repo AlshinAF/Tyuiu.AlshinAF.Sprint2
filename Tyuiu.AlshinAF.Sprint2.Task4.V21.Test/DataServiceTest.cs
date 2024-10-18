@@ -10,7 +10,7 @@ namespace Tyuiu.AlshinAF.Sprint2.Task4.V21.Test
             DataService ds = new DataService();
             double x = 1;
             double y = 4;
-            double wait = 0.405;
+            double wait = 256;
             double res = ds.Calculate(x, y);
             Assert.AreEqual(wait, res);
         }
@@ -20,7 +20,7 @@ namespace Tyuiu.AlshinAF.Sprint2.Task4.V21.Test
             DataService ds = new DataService();
             double x = 2;
             double y = 3;
-            double wait = 20.797;
+            double wait = 0.643;
             double res = ds.Calculate(x, y);
             Assert.AreEqual(wait, res);
         }
