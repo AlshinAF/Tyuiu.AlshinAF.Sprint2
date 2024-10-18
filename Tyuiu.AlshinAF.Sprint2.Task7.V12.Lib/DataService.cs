@@ -6,7 +6,7 @@ namespace Tyuiu.AlshinAF.Sprint2.Task7.V12.Lib
         public bool CheckDotInShadedArea(double x, double y)
         {
             bool res;
-            if ((y == 2 - x) && (((x > 0) && (x <= 2) && (y <= 1) && (y > 0)) || ((x <= (-2)) && (y >= 4))))
+            if ((y == 2 - x) && (((x >= 0) && (x <= 2) && (y <= 1) && (y >= 0)) || ((x <= (-2)) && (y >= 4))))
             {
                 if (y != (x * x))
                 {
