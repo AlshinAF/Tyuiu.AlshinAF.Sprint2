@@ -10,7 +10,7 @@ namespace Tyuiu.AlshinAF.Sprint2.Task5.V9.Test
             DataService ds = new DataService();
             int n = 9;
             int m = 4;
-            string wait = "Апрель 10";
+            string wait = "04.10";
             Assert.AreEqual(wait, ds.FindDateOfNextDay(m, n));
         }
     }

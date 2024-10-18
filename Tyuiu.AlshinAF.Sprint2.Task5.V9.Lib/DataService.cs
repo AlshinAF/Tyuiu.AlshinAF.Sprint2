@@ -7,48 +7,7 @@ namespace Tyuiu.AlshinAF.Sprint2.Task5.V9.Lib
         public string FindDateOfNextDay(int m, int n)
         {
             string res;
-            switch (m)
-            {
-                case 1:
-                    res = "Январь";
-                    break;
-                case 2:
-                    res = "Февраль";
-                    break;
-                case 3:
-                    res = "Март";
-                    break;
-                case 4:
-                    res = "Апрель";
-                    break;
-                case 5:
-                    res = "Май";
-                    break;
-                case 6:
-                    res = "Июнь";
-                    break;
-                case 7:
-                    res = "Июль";
-                    break;
-                case 8:
-                    res = "Август";
-                    break;
-                case 9:
-                    res = "Сентябрь";
-                    break;
-                case 10:
-                    res = "Октябрь";
-                    break;
-                case 11:
-                    res = "Ноябрь";
-                    break;
-                case 12:
-                    res = "Декабрь";
-                    break;
-                default:
-                    throw new ArgumentException($"Месяц должен быть от 1 до 12. Значение {m}");
-                    break;
-            }
+            string x;
             switch (n)
             {
                 case 1:
@@ -164,44 +123,50 @@ namespace Tyuiu.AlshinAF.Sprint2.Task5.V9.Lib
             switch (m)
             {
                 case 1:
-                    res = "Январь " + n.ToString(); ;
+                    res = "01.";
                     break;
                 case 2:
-                    res = "Февраль " + n.ToString(); ;
+                    res = "02.";
                     break;
                 case 3:
-                    res = "Март " + n.ToString(); ;
+                    res = "03.";
                     break;
                 case 4:
-                    res = "Апрель " + n.ToString(); ;
+                    res = "04.";
                     break;
                 case 5:
-                    res = "Май " + n.ToString(); ;
+                    res = "05.";
                     break;
                 case 6:
-                    res = "Июнь " + n.ToString(); ;
+                    res = "06.";
                     break;
                 case 7:
-                    res = "Июль " + n.ToString(); ;
+                    res = "07.";
                     break;
                 case 8:
-                    res = "Август " + n.ToString(); ;
+                    res = "08.";
                     break;
                 case 9:
-                    res = "Сентябрь " + n.ToString(); ;
+                    res = "09.";
                     break;
                 case 10:
-                    res = "Октябрь " + n.ToString(); ;
+                    res = "10.";
                     break;
                 case 11:
-                    res = "Ноябрь " + n.ToString(); ;
+                    res = "11.";
                     break;
                 case 12:
-                    res = "Декабрь " + n.ToString();
+                    res = "12.";
                     break;
                 default:
                     throw new ArgumentException($"Месяц должен быть от 1 до 12. Значение {m}");
             }
+            string s;
+            if (n<10)
+                s = "0" + n.ToString();
+            else
+                s = n.ToString();
+            res = res + s;
             return res;
         }
                     
